@@ -138,7 +138,7 @@ func s:PreviewWord()
             match none "delete the current highlight marks
 
             "high light the match word in the previewwindow
-            hi previewWord term=bold ctermbg=green guibg=green
+            hi previewWord term=bold ctermbg=blue guibg=blue
             exe 'match previewWord "\%' . line(".") . 'l\%' . col(".") . 'c\k*"'
             exec oldwin.'wincmd w'  
             "back from preview window
